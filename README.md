@@ -30,6 +30,26 @@ portfolio mobile version
 </ul>
 
 
+<h3>Project Requirement</h3>
+<ul>
+    <li>the "About myself" section (placed after the projects and before the contact form):</li>
+    <li>Make sure the content of the "About myself" section is aligned with flexbox.</li>
+    <li>In order to lay out the elements in "Works" section you should use CSS Grid and Flexbox combined (it is mandatory that you use both). Use CSS Grid in the main container that contains all of the cards and use Flexbox to lay out an individual card.</li>
+    <li>Please use ul and li for categories in "Work" section. Html, CSS, and JavaScript should be list items.</li>
+    <li>Please use ul and li for categories in "About myself" section. Languages, Frameworks, and Skills should be list items.</li>
+    <li>You don't need to implement the detail modal window that requires JavaScript.</li>
+    <li>You must stick to the design as much as possible (e.g., font, colors, images, text, margins) using the templates in Figma.</li>
+    <li>Implement the button interactions (enable, hover, etc.).</li>
+    <li>The website should be responsive, following these breakpoints:
+        <ul>
+            <li> Minimum mobile screen size should be 375px</li>
+            <li>Minimum desktop screen size should be 768px</li>
+        </ul>
+    </li>
+    <li>Use responsive values in your CSS rules, like percentages (i.e. width: 80%), instead of pixels</li>
+</ul>
+
+
 
 ## 🛠 Built With <a name="built-with">Html Css </a>
 
