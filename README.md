@@ -1,7 +1,6 @@
 # PortfolioFinishMobileVersion
 portfolio mobile version
 
-<a name="readme-top"Portfolio : Finish Mobile Version Project</a>
 
 
 <h3><b>Microverse README Template</b></h3>
