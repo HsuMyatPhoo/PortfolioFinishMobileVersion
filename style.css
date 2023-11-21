@@ -1,23 +1,23 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #F7F7F9;
+  background-color: #f7f7f9;
 }
 
 header {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    padding:1em 2em;
-    float: left;
-    position: fixed;
-    top: 10px;
-    width: 100%;  
-    z-index: 100;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  float: left;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  z-index: 100;
 }
 
 header .logo {
@@ -25,10 +25,9 @@ header .logo {
   font-family: 'Poppins', sans-serif;
   font-size: 22px;
   font-weight: 700;
-  color: #6070FF;
-  text-shadow: 1px 1px 0.6px #091E42;
+  color: #6070ff;
+  text-shadow: 1px 1px 0.6px #091e42;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
   cursor: pointer;
 }
@@ -41,12 +40,12 @@ header .menuicon span {
   display: block;
   width: 25px;
   height: 4px;
-  background: #6070FF;
+  background: #6070ff;
   margin-bottom: 5px;
 }
 
 header .navbar {
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   display: none;
@@ -59,19 +58,19 @@ header .navbar a {
   color: #344563;
   cursor: pointer;
   text-decoration: none;
-  margin:auto 1em;
+  margin: auto 1em;
 }
 
-.navbar a:hover  {
-  color: #6070FF;
-  text-shadow: 1px 1px 0.6px #091E42;
+.navbar a:hover {
+  color: #6070ff;
+  text-shadow: 1px 1px 0.6px #091e42;
   transition: all 0.5s;
 }
 
 /* mobile view nav icon click  */
 .navheader {
   height: 100vh;
-  background-color:rgba(96, 112, 255, 0.9);
+  background-color: rgba(96, 112, 255, 0.9);
   top: 0;
   flex-wrap: wrap;
 }
@@ -120,8 +119,8 @@ header .navbar a {
   display: block;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom:1em;
-  color: #fff ;
+  margin-bottom: 1em;
+  color: #fff;
 }
 
 .navheader .navbar a:hover {
@@ -130,8 +129,10 @@ header .navbar a {
 
 /* End of header section  */
 
-/*Start of  home page section  */
-.homepage, .about-myself {
+/*Start of  home page section */
+
+.homepage,
+.about-myself {
   clear: both;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
@@ -140,32 +141,35 @@ header .navbar a {
   padding-top: 9em;
 }
 
-.homepage h1, .about-myself h1 {
+.homepage h1,
+.about-myself h1 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   min-width: 327px;
-  color: #172B4D;
-  margin-bottom:0.3em;
+  color: #172b4d;
+  margin-bottom: 0.3em;
 }
 
-.homepage p, .about-myself p  {
+.homepage p,
+.about-myself p {
   font-size: 18px;
   font-weight: 400px;
   max-width: 880px;
   min-width: 327px;
   color: #344563;
   line-height: 24px;
-  margin-bottom:0.3em;
+  margin-bottom: 0.3em;
 }
 
-.homepage .connect, .about-myself .connect {
+.homepage .connect,
+.about-myself .connect {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   color: #7f8cff;
-  padding:0.2em 0;
-  cursor: pointer; 
+  padding: 0.2em 0;
+  cursor: pointer;
 }
 
 .socialmedia span i {
@@ -181,59 +185,61 @@ header .navbar a {
 }
 
 /* smaller screen view  */
-@media screen and (max-width:375px) {
-    .homepage h1 {
-      font-size: 35px;
-      min-width: 100px;
-    }
+@media screen and (max-width: 375px) {
+  .homepage h1 {
+    font-size: 35px;
+    min-width: 100px;
+  }
 
-    .homepage p {
-      font-size: 20px;
-      width: 80%;
-      min-width: 270px;
-    }
+  .homepage p {
+    font-size: 20px;
+    width: 80%;
+    min-width: 270px;
+  }
 
-    .homepage .connect {
-      font-size: 18px;
-    }
+  .homepage .connect {
+    font-size: 18px;
+  }
 }
 
 /* for desktop view  */
-@media screen and (min-width:768px) {
-   header {
-    padding:1em 6em;
-   }
-    header .menuicon {
-      display: none;
-    }
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1em 6em;
+  }
+
+  header .menuicon {
+    display: none;
+  }
     
-    header .navbar {
-      display: inline-block;
-    }
+  header .navbar {
+    display: inline-block;
+  }
 
-    .homepage {
-      background-color: #fff;
-      align-items: center;
-      padding-left: 15%;
-      padding-top: 10em;     
-    }
+  .homepage {
+    background-color: #fff;
+    align-items: center;
+    padding-left: 15%;
+    padding-top: 10em;     
+  }
+  
+  .homepage h1 {
+    color: #091e42;
+  }
 
-    .homepage h1 {
-      color: #091E42; 
-    }
 }
 
 /* This is the work section  */
 .work {
   font-family: 'Poppins', sans-serif;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   display: grid;
   grid-template-columns: 327px;
   grid-template-columns: repeat(1,1fr);
   justify-content: center;
   align-content: center;
   margin-left: 50%; 
-  transform: translateX( -50%);
+  transform: translateX(-50%);
   row-gap: 25px;
 } 
 
@@ -247,7 +253,7 @@ header .navbar a {
 
 .card .card-container {
   width: 90%;
-  margin-left:5%;
+  margin-left: 5%;
 }
 
 .work .card img {
@@ -264,7 +270,7 @@ header .navbar a {
   font-size: 35px;
   font-weight: 700;
   line-height: 44px;
-  color: #172B4D;
+  color: #173b4d;
   margin-bottom: 10px;
 }
 
@@ -287,12 +293,12 @@ header .navbar a {
   font-weight: 300;
   width: 10px;
   height: 10px;
-  background-color: #7A869A;
+  background-color: #7a869a;
   border-radius: 50%;
 }
 
 .work-details span {
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .card-items p {
@@ -300,7 +306,6 @@ header .navbar a {
   font-weight: 400;
   color: #344563;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   margin-right:10px;
   margin-bottom: 10px;
@@ -309,29 +314,31 @@ header .navbar a {
 .card-items .language {
   display: flex;
   list-style-type: none;
-  margin:0.5em 0;
+  margin: 0.5em 0;
   cursor: pointer;
 }
 
 .language li {
   font-size: 14px;
-  color: #6070FF;
-  background-color: #EBEBFF;
+  color: #6070ff;
+  background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
   margin: 5px 0;
   cursor: pointer;
 } 
 
-.card1 .language, .card2 .language {
+.card1 .language,
+.card2 .language {
   width: 70%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 
-.language li:nth-of-type(2), .language li:nth-of-type(4) {
-    margin: 5px 8px;
+.language li:nth-of-type(2),
+.language li:nth-of-type(4) {
+  margin: 5px 8px;
 } 
 
 .card-container button {
@@ -339,15 +346,15 @@ header .navbar a {
   font-weight: 500;
   width: 126px;
   height: 48px;
-  color: #6070FF;
+  color: #6070ff;
   background-color: white;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 10px;
   letter-spacing: 3%;
   outline: none;
   cursor: pointer;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .card-container button:hover {
@@ -355,9 +362,8 @@ header .navbar a {
   color: white;
 }
 
-
 /* For desktop view  */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .work {
     width: 100%;
     row-gap: 50px;
@@ -367,7 +373,7 @@ header .navbar a {
 
   .work .card {
     width: 90%;
-    height:95%;
+    height: 95%;
     border-radius: 20px;
     margin-bottom: 2em;
     margin-left: 5%;
@@ -376,7 +382,7 @@ header .navbar a {
    .work .card .card-container {
     width: 96%;
     height: 98%;
-    display:  flex ;
+    display:  flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 3%;
@@ -389,7 +395,7 @@ header .navbar a {
 
   .card-container .card-items {
     width: 50%;
-    height:92%;
+    height: 92%;
     align-items: center;
   }
 
@@ -400,16 +406,17 @@ header .navbar a {
   }
 
   .card-items .work-details {
-    width:60% ;
+    width: 60%;
     min-width: 300px;
-    margin-bottom:2em;
+    margin-bottom: 2em;
   }
 
   .card-items .language {
     margin: 1em 0;
   }
 
-  .card1 .language, .card2 .language {
+  .card1 .language,
+  .card2 .language {
     width: 90%;
     min-width: 350px;
     justify-content: start;
@@ -417,7 +424,7 @@ header .navbar a {
   }
 
   .card-items button {
-    background-color: #4053FC;
+    background-color: #4053fc;
     color: #fff;
   }
 
@@ -443,7 +450,8 @@ header .navbar a {
     grid-area: 4/1/5/2;
   }
 
-  .card2 .card-container, .card4 .card-container {
+  .card2 .card-container,
+  .card4 .card-container {
     flex-direction: row-reverse;
   }
 }
@@ -462,9 +470,9 @@ header .navbar a {
   font-weight: 500;
   width: 162px;
   height: 48px;
-  color: #396DF2;
+  color: #396df2;
   background-color: #fff;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 12px;
   margin: 20px 0;
@@ -486,27 +494,29 @@ header .navbar a {
   margin: 1em auto;
 }
 
-.frameworks-div .frameworks, .skills-div .skills {
+.frameworks-div .frameworks,
+.skills-div .skills {
   display: none;
 }
 
 .details .details-header {
   width: 90%;
-  height:50px;
+  height: 50px;
   line-height: 50px;
   display: flex;
   justify-content: space-between;
-  padding:1em auto;
+  padding: 1em auto;
 }
 .div-container.hide {
-    border-bottom:1px solid #999;
+    border-bottom: 1px solid #999;
 }
-.details-header h2, .details-header span {
+.details-header h2,
+.details-header span {
     cursor: pointer;
 }
 
 .right {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .details ul {
@@ -527,11 +537,11 @@ header .navbar a {
 }
 
 .details ul li img {
-  width:50px;
+  width: 50px;
   height: 50px;
   background-color: lightgreen;
   border-radius: 50%;
-  margin:auto  1em;
+  margin: auto  1em;
 }
 
 /* for smaller screen view  */
@@ -570,7 +580,7 @@ header .navbar a {
 
   .about-myself .contact .connect {
     font-weight: 500;
-    color: #7F8CFF;
+    color: #7f8cff;
   }
 
   .about-myself .details {
@@ -636,7 +646,7 @@ header .navbar a {
 }
 
 .contact-me form input {
-  width:330px;
+  width: 330px;
   height: 48px;
   border: none;
   border-radius: 8px;
@@ -648,7 +658,7 @@ header .navbar a {
 .contact-me form input::placeholder {
   font-size: 17px;
   font-weight: 400;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .contact-me form textarea {
@@ -667,7 +677,7 @@ header .navbar a {
 }
  
 .contact-me form button {
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   color: #6070ff;
   background-color: #fff;
@@ -694,7 +704,7 @@ header .navbar a {
 @media screen and (min-width: 768px) {
   .contact-me {
     border-top-left-radius: 200px;
-    padding:5em 0;
+    padding: 5em 0;
   }
   .contact-me p {
     font-size: 20px;
@@ -707,7 +717,7 @@ header .navbar a {
     text-align: center;
   }
 
-  .contact-me form input{
+  .contact-me form input {
     width: 400px;
     border-radius: 0px;
   }
@@ -719,7 +729,7 @@ header .navbar a {
     resize: none;
   }
 
-  .contact-me form button  {
+  .contact-me form button {
     font-size: 17px;
     padding: 15px 25px;
   }
