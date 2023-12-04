@@ -11,13 +11,15 @@ body {
 
 header {
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  padding: 1em 2em;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 1px 1px 8px rgba(47, 97, 169, 0.3);
   float: left;
   position: fixed;
-  top: 10px;
-  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2em 2em;
   z-index: 100;
 }
 
@@ -27,7 +29,6 @@ header .logo {
   font-size: 22px;
   font-weight: 700;
   color: #6070ff;
-  text-shadow: 1px 1px 0.6px #091e42;
   line-height: 20px;
   text-align: center;
   cursor: pointer;
@@ -63,7 +64,6 @@ header .navbar a {
 
 .navbar a:hover {
   color: #6070ff;
-  text-shadow: 1px 1px 0.6px #091e42;
   transition: all 0.5s;
 }
 
@@ -71,6 +71,7 @@ header .navbar a {
 .navheader {
   height: 100vh;
   background-color: rgba(96, 112, 255, 0.9);
+  align-items:start;
   top: 0;
   flex-wrap: wrap;
 }
@@ -110,16 +111,20 @@ header .navbar a {
 
 .navheader .navbar {
   display: flex;
-  width: 100%;
-  margin-top: -100px;
-  text-align: center;
+  text-align: start;
+  justify-content: start !important; 
+  flex-wrap: wrap;
+  margin-top: 0;
+  /* padding: 0; */
+  /* margin: 0; */
 }
 
 .navheader .navbar a {
-  display: block;
+  display: flex;
+  width: 100%;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   color: #fff;
 }
 
@@ -139,6 +144,11 @@ header .navbar a {
   background-color: #fff;
   padding: 3em;
   padding-top: 9em;
+}
+.homepage {
+  background:url(image/background1.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 .homepage h1,
@@ -184,23 +194,6 @@ header .navbar a {
   font-weight: bolder;
 }
 
-/* smaller screen view  */
-@media screen and (max-width: 375px) {
-  .homepage h1 {
-    font-size: 35px;
-    min-width: 100px;
-  }
-
-  .homepage p {
-    font-size: 20px;
-    width: 80%;
-    min-width: 270px;
-  }
-
-  .homepage .connect {
-    font-size: 18px;
-  }
-}
 
 /* for desktop view  */
 @media screen and (min-width: 768px) {
@@ -329,8 +322,8 @@ header .navbar a {
 
 .card1 .language,
 .card2 .language {
-  width: 70%;
-  justify-content: space-between;
+  display: flex;
+  justify-content: start;
   flex-wrap: wrap;
 }
 
@@ -413,13 +406,13 @@ header .navbar a {
     margin: 1em 0;
   }
 
-  .card1 .language,
+  /* .card1 .language,
   .card2 .language {
     width: 90%;
     min-width: 350px;
     justify-content: start;
     flex-wrap: wrap;
-  }
+  } */
 
   .card-items button {
     background-color: #4053fc;
@@ -543,23 +536,6 @@ header .navbar a {
   margin: auto  1em;
 }
 
-/* for smaller screen view  */
-@media screen and (max-width: 375px) {
-  .about-myself h1 {
-    font-size: 35px;
-    min-width: 100px;
-  }
-
-  .about-myself p {
-    font-size: 20px;
-    width: 80%;
-    min-width: 270px;
-  }
-
-  .about-myself .connect {
-    font-size: 18px;
-  }
-}
 
 /* For desktop view  */
 @media screen and (min-width: 768px) {
@@ -615,7 +591,10 @@ header .navbar a {
   clear: both;
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  background-color: #6070ff;
+  /* background-color: #6070ff; */
+  background:url(image/background3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-top-left-radius: 100px;
   text-align: center;
   padding: 20px 0;
@@ -643,6 +622,7 @@ header .navbar a {
 }
 
 .contact-me form input {
+  font-size: 17px;
   width: 330px;
   height: 48px;
   border: none;
@@ -659,6 +639,7 @@ header .navbar a {
 }
 
 .contact-me form textarea {
+  font-size: 15px;
   width: 327px;
   border-radius: 8px;
   padding-top: 10px;
@@ -678,26 +659,28 @@ header .navbar a {
   font-size: 18px;
   color: #6070ff;
   background-color: #fff;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 8px;
   padding: 12px 16px;
   margin: 20px 0;
   outline: none;
   cursor: pointer;
+  
+  transition: all 0.1s;
 }
 
 .contact-me form button:hover {
   color: #fff;
   background-color: #6070ff;
   border: 2px solid #fff;
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 .contact-me:last-child {
   text-align: left !important;
 }
 
-/* For mobile view  */
+/* For desktop view  */
 @media screen and (min-width: 768px) {
   .contact-me {
     border-top-left-radius: 200px;
