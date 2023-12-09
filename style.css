@@ -16,7 +16,6 @@ header {
   box-shadow: 1px 1px 8px rgba(47, 97, 169, 0.3);
   float: left;
   position: fixed;
-
   display: flex;
   justify-content: space-between;
   padding: 1.2em 2em;
@@ -71,7 +70,7 @@ header .navbar a {
 .navheader {
   height: 100vh;
   background-color: rgba(96, 112, 255, 0.9);
-  align-items:start;
+  align-items: start;
   top: 0;
   flex-wrap: wrap;
 }
@@ -112,10 +111,12 @@ header .navbar a {
 .navheader .navbar {
   display: flex;
   text-align: start;
-  justify-content: start !important; 
+  justify-content: start !important;
   flex-wrap: wrap;
   margin-top: 0;
+
   /* padding: 0; */
+
   /* margin: 0; */
 }
 
@@ -145,8 +146,9 @@ header .navbar a {
   padding: 3em;
   padding-top: 9em;
 }
+
 .homepage {
-  background:url(image/background1.jpg) !important;
+  background: url(image/background1.jpg) !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
@@ -193,7 +195,6 @@ header .navbar a {
 .socialmedia span i:hover {
   font-weight: bolder;
 }
-
 
 /* for desktop view  */
 @media screen and (min-width: 768px) {
@@ -536,7 +537,6 @@ header .navbar a {
   margin: auto  1em;
 }
 
-
 /* For desktop view  */
 @media screen and (min-width: 768px) {
   .about-myself {
@@ -591,8 +591,9 @@ header .navbar a {
   clear: both;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+
   /* background-color: #6070ff; */
-  background:url(image/background3.jpg);
+  background: url(image/background3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-top-left-radius: 100px;
@@ -665,7 +666,6 @@ header .navbar a {
   margin: 20px 0;
   outline: none;
   cursor: pointer;
-  
   transition: all 0.1s;
 }
 
