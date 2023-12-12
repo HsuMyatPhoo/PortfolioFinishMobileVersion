@@ -21,28 +21,30 @@
             <span></span>
             <span></span>
         </div>
-        <nav class="navbar">
-            <a href="#">Portfolio</a>
-            <a href="#aboutmyself">About</a>
-            <a href="#contactme">Contact</a>
+        <nav class="navbar" id="navbar">
+            <a href="#" onclick="removenav()">Portfolio</a>
+            <a href="#aboutmyself" onclick="removenav()">About</a>
+            <a href="#contactme" onclick="removenav()">Contact</a>
         </nav>
     </header>
     
     <section class="homepage">
-        <h1>I’m Alexandra. <br>
-            Glad to see you!
-        </h1>
-        <p>
-            I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-        </p>
-
-        <p class="connect">LET’S CONNECT</p>
-        <div class="socialmedia">
-            <span><i class="fa-brands fa-twitter"></i></span>
-            <span><i class="fa-brands fa-linkedin-in"></i></span>
-            <span><i class="fa-solid fa-m"></i></span>
-            <span><i class="fa-brands fa-github"></i></span>
-            <span><i class="fa-regular fa-hand-peace"></i></span>
+        <div class="container">
+            <h1>I’m Alexandra. <br>
+                Glad to see you!
+            </h1>
+            <p>
+                I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+            </p>
+    
+            <p class="connect">LET’S CONNECT</p>
+            <div class="socialmedia">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                <span><i class="fa-solid fa-m"></i></span>
+                <span><i class="fa-brands fa-github"></i></span>
+                <span><i class="fa-regular fa-hand-peace"></i></span>
+            </div>
         </div>     
     </section>
 
@@ -238,32 +240,45 @@
 
     <!-- Contact me  -->
     <section id="contactme" class="contact-me">
-        <h2>Contact me</h2>
-        <p>
-            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-            I’d love to help with it!
-        </p>
-        <form action="">
-            <input type="text" class="name" placeholder="Your Name">
-            <input type="text" class="email" placeholder="loremipsum@gmail.com">
-            <textarea name="" id="" cols="35" rows="10" placeholder="Write your message here"></textarea>
-            <button>Get in touch</button>
-        </form>
+        <div class="contactdiv">
+            <h2>Contact me</h2>
+            <p>
+                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+                I’d love to help with it!
+            </p>
+            <form action="">
+                <input type="text" class="name" placeholder="Your Name">
+                <input type="text" class="email" placeholder="loremipsum@gmail.com">
+                <textarea name="" id="" cols="35" rows="10" placeholder="Write your message here"></textarea>
+                <button>Get in touch</button>
+            </form>
+        </div>
     </section>
 
     <script> 
         
+        let getheader = document.getElementById('header');
 
         function shownav(){
-          let getheader = document.getElementById('header');
           getheader.classList.toggle('navheader');
         }
 
+        let navbar = document.getElementById('navbar');
         
-
+        function  removenav(){
+            if(getheader.classList.contains('navheader')){
+                // console.log("this is small size");
+                getheader.className = "";
+            }else {
+                // console.log("This is normal");
+            }
+        }
     
     </script>
 
     
 </body>
 </html>
+
+
+ 

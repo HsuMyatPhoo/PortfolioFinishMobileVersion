@@ -135,9 +135,12 @@ header .navbar a {
 
 /* End of header section  */
 
-/* Start of  home page section */
+/* Start of  Home page section */
+.homepage {
+  background-color: #fff;
+}
 
-.homepage,
+.homepage .container,
 .about-myself {
   clear: both;
   font-family: 'Poppins', sans-serif;
@@ -147,8 +150,8 @@ header .navbar a {
   padding-top: 9em;
 }
 
-.homepage {
-  background: url(image/background1.jpg) !important;
+.homepage .container {
+  background: url(image/headerbg.png) !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
@@ -586,19 +589,22 @@ header .navbar a {
 }
 
 /* This is contact me section  */
-
 .contact-me {
+  border-top-left-radius: 100px;
+  background-color: #6070ff;
+  padding: 20px 0;
+}
+
+.contactdiv {
   clear: both;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 
   /* background-color: #6070ff; */
-  background: url(image/background3.jpg);
+  background: url(image/contactbg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border-top-left-radius: 100px;
   text-align: center;
-  padding: 20px 0;
 }
 
 .contact-me h2 {
