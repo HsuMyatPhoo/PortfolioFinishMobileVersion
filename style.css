@@ -187,15 +187,19 @@ header .navbar a {
   cursor: pointer;
 }
 
-.socialmedia span i {
+.socialmedia a {
+  text-decoration: none;
   font-size: 21px;
   font-weight: bold;
   color: #505f79;
+}
+
+.socialmedia a i {
   margin: auto 0.4em;
   cursor: pointer;
 }
 
-.socialmedia span i:hover {
+.socialmedia a i:hover {
   font-weight: bolder;
 }
 
@@ -459,7 +463,8 @@ header .navbar a {
   border-top-right-radius: 80px;
 }
 
-.about-myself .contact button {
+.about-myself .contact .button {
+  display: inline-block;
   font-size: 18px;
   font-weight: 500;
   width: 162px;
@@ -467,13 +472,18 @@ header .navbar a {
   color: #396df2;
   background-color: #fff;
   border: 1px solid #6070ff;
-  border-radius: 8px;
-  padding: 12px;
   margin: 20px 0;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+
+  /* padding: 12px;
+  */
 }
 
-.about-myself .contact button:hover {
+.about-myself .contact .button:hover {
   background-color: #396df2;
   color: #fff;
   transition: all 0.5s;
@@ -599,8 +609,6 @@ header .navbar a {
   clear: both;
   font-family: 'Poppins', sans-serif;
   color: #fff;
-
-  /* background-color: #6070ff; */
   background: url(image/contactbg.png);
   background-size: cover;
   background-repeat: no-repeat;
