@@ -144,9 +144,10 @@ Example commands:
 
 👤 **Hsu Myat Phoo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle]([https://github.com/githubhandle](https://github.com/HsuMyatPho))
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle](https://x.com/HsuMyatPhoo2?t=ttgO-_FE4cRTdEGmoeb6Og&s=09))
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle](https://www.linkedin.com/in/hsu-myat-phoo-37ba081aa))
+
 
 
 
